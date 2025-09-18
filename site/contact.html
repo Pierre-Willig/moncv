@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="IE-edge">
+    <meta name="description" content="Un CV certainement très mal fait.">
+    <title>Ma page contact pas belle</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <form action="" method="get">
+                    <label for="nom"><p>Nom: <input type="text" name="nom" id="nom"></p></label>
+                    <label for="prenom"><p>Prénom: <input type="text" name="prenom" id="prenom"></p></label>
+                    <label for="email"><p>Email: <input type="email" name="email" id="email"></p></label>
+                    <fieldset>
+                        <legend>Compétences</legend> <input type="checkbox" name="competences" value="Javascript" id="Javascrit"> <label for="Javascript">Javascript</label>  
+                        <input type="checkbox" name="competences" value="php" id="php"> <label for="php">PHP</label>  
+                        <input type="checkbox" name="competences" value="csharp" id="csharp"> <label for="csharp">C#</label>  
+                        <input type="checkbox" name="competences" value="ruby" id="ruby"> <label for="ruby">Ruby</label>  
+                        <input type="checkbox" name="competences" value="react" id="react"> <label for="react">React</label>  
+                        <input type="checkbox" name="competences" value="nodejs" id="nodejs"> <label for="nodejs">Nodejs</label>  
+                    </fieldset>
+                    <p><label for="genre">Genre: </label>
+                        <select name="genre" id="genre">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                            <option value="idk">Censuré</option>
+                        </select>
+                    </p>
+                    <p><label for="message">Message:</label></p>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message ici."></textarea>
+                    <p><label for="poste">Poste: </label>
+                        <select name="poste" id="poste">
+                            <option value="dev">Développeur</option>
+                            <option value="berk">Intégrateur</option>
+                            <option value="concepteur">Concepteur</option>
+                        </select>
+                    </p>
+                    <input type="submit" value="submit">
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
