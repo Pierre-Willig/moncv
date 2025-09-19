@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.colleft .colright {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.colleft {
+    width: 30%;
+}
+
+.colright {
+    width: 60%;
+}
+
+.nom { 
+    border-style: dashed;
+    border-width: 3px;
+    border-bottom: 3px;
+    border-color: #22d;
+}
