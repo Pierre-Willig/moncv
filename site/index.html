@@ -1,104 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA Compatible" content="IE-edge">
-    <meta name="description" content="Un CV certainement très mal fait.">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA Compatible" content="IE-edge" />
+    <meta name="description" content="Un CV certainement très mal fait." />
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>Mon CV pas beau</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="./contact.html">par ici jeune scarabée</a></li>
-            <li><a href="./structure.html">L'exo des tableaux</a></li>
-        </ul>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-b mb-lg-0">
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link"
+                >par ici jeune scarabée</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./structure.html" class="nav-link">L'exo des tableaux</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
 
-        <section class="colleft">
-            <article id="nom">
-                <h1>Willig Pierre</h1>
+    <main>
+      <div class="container">
+        <div class="row mt-3 mb-5 g-1 g-lg-3">
+          
+            <!-- Colone de gauche -->
+          <section class="h-75 col-12 col-lg-4 border border-primary border-2 rounded overflow-auto shadow">
+            
+            <article id="nom" class="text-primary">
+              <h1>Willig Pierre</h1>
             </article>
 
-            <article id="contactinfo">  
-                <ul>
-                    <li>
-                        <img src="./images/home.png" height="15px">
-                        36B rue Victor Hugo
-                    </li>
-                    <li>
-                        <img src="./images/nav.png" height="15px">
-                        34500 Béziers
-                    </li>
-                    <li>
-                        <img src="./images/mobile.png" height="15px">
-                        <strong>(33) 06 32 14 94 01</strong>
-                    </li>
-                    <li>
-                        <img src="./images/mail.png" height="15px">
-                        <strong><a href="mailto:willig.pierre@gmail.com">willig.pierre@gmail.com</a></strong>
-                    </li>
-                </ul>
+            <article id="contactinfo">
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./images/home.png" height="15px" />
+                  36B rue Victor Hugo
+                </li>
+                <li>
+                  <img src="./images/nav.png" height="15px" />
+                  34500 Béziers
+                </li>
+                <li>
+                  <img src="./images/mobile.png" height="15px" />
+                  <strong>(33) 06 32 14 94 01</strong>
+                </li>
+                <li>
+                  <img src="./images/mail.png" height="15px" />
+                  <strong
+                    ><a href="mailto:willig.pierre@gmail.com"
+                      >willig.pierre@gmail.com</a
+                    ></strong
+                  >
+                </li>
+              </ul>
             </article>
 
             <article class="competences">
-                <h3>Compétences</h3>
-                <ul>
-                    <li>→ Faire un site moche</li>
-                    <li>→ Ne pas respecter les RGPDs</li>
-                    <li>→ Mettre des balises HTML au hasard</li>
-                    <li>→ Haïr le CSS</li>
-                    <li>→ Compter en binaire avec les doigts</li>
-                </ul>
+              <h3 class="text-primary fs-2">Compétences</h3>
+              <ul class="list-unstyled">
+                <li>→ Faire un site moche</li>
+                <li>→ Ne pas respecter les RGPDs</li>
+                <li>→ Mettre des balises HTML au hasard</li>
+                <li>→ Haïr le CSS</li>
+                <li>→ Compter en binaire avec les doigts</li>
+              </ul>
             </article>
 
             <article id="language">
-                <h3>Languages</h3>
-                Anglais - C2
+              <h3 class="text-primary fs-2">Languages</h3>
+              Anglais - C2
             </article>
+          </section>
 
-        </section>
+          <!-- espacement des deux colonnes principales -->
+          <div class="col-1"></div>
 
-        <section class="colright">
-
+          <!-- Colonne de droite -->
+          <section
+            class="col-12 col-lg-7 border border-primary border-2 rounded shadow"
+          >
             <article id="experiences">
-                <h3>Expériences professionnelles</h3>
-                <ul>   
-                    <li><p><strong>Accompagnement d'élèves en situation de handicap stagiaire</strong>, Béziers - école Jean Jaures </p>
-                    <p class="dates">Du 25/04/2024 au 14/05/2024</p>
-                    <p>Accompagnement, aide aux exercices et à la compréhension.</p></li>
-                    <li><p><strong>Manutentionnaire</strong>, Villeveyrac — 3S</p>
-                    <p class="dates">Aout 2023 à Septembre 2023</p>
-                    <p>Mise en carton et mise en place de cartons sur palette en fin de ligne BIB.</p></li>
-                    <li><p><strong>Aide Ainimateur en Service Civique</strong>, Clermont-Ferrand — Uni-cité</p>
-                    <p class="dates">Octobre 2018 à Juin 2019</p>
-                    <p>Aide à l'animation en EHPAD, visites à domicile de personnes âgées en situation d'isolement, création d'ateliers adaptés aux difficultés dûes à l'âge.</p></li>
-                    <li><p><strong>Programmeur Web</strong>, Clermont-Ferrand — Université Blaise Pascal</p>
-                    <p class="dates">Mai 2013 À Juin 2013</p>
-                    <p>Mise à jour du site web de l'université, intégration d'un ReCaptcha.</p></li>
-                </ul>
+              <h3 class="text-primary fs-2">Expériences professionnelles</h3>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong
+                      >Stagiaire accompagnement d'élèves en situation de
+                      handicap</strong
+                    >
+                    <span class="fs-6">
+                      Accompagnement, aide aux exercices et à la compréhension.
+                    </span>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Béziers, école Jean Jaures, du 25/04/2024 au 14/05/2024
+                </figcaption>
+              </figure>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong>Manutentionnaire</strong>
+                    <span class="fs-6">
+                      Mise en carton et mise en place de cartons sur palette en
+                      fin de ligne BIB.
+                    </span>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Villeveyrac, 3S, Aout 2023 à Septembre 2023
+                </figcaption>
+              </figure>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong>Aide Ainimateur en Service Civique</strong>
+                    <span class="fs-6">
+                      Aide à l'animation en EHPAD, visites à domicile de
+                      personnes âgées en situation d'isolement, création
+                      d'ateliers adaptés aux difficultés dûes à l'âge.
+                    </span>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Clermont-Ferrand, Uni-cité, Octobre 2018 à Juin 2019
+                </figcaption>
+              </figure>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong>Programmeur Web</strong>
+                    <span class="fs-6">
+                      Mise à jour du site web de l'université, intégration d'un
+                      ReCaptcha.
+                    </span>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Clermont-Ferrand, Université Blaise Pascal, Mai 2013 À Juin
+                  2013
+                </figcaption>
+              </figure>
             </article>
 
             <article id="formations">
-                <h3>Formations</h3>
-            <ul>   
-                <li><p><strong>Projet Professionnel</strong>, Béziers — Passerelles</p>
-                <p class="dates">03/2024 - 06/2024</p></li>
-                <li><p><strong>1ere Année Licence de Psychologie</strong>, Clermont-Ferrand — Université Blaise Pascal</p>
-                <p class="dates">06/2015</p></li>
-                <li><p><strong>Niveau BTS Service Informatique aux Organisations, Spécialité Solutions Logicielles et Applications Métiers (SIO - SLAM)</strong>, Clermont-Ferrand — Lycée Sidoine Apollinaire</p>
-                <p class="dates">06/2014 </p></li>
-                <li><strong>Baccalauréat Science et Technologies de la Gestion, Spécialité Gestion des Systèmes d'Information (Section Européenne)</strong>, Clermont-Ferrand — Lycée Sidoine Apollinaire
-                <p class="dates">06/2012</p></li>
-            </ul>
+              <h3 class="text-primary fs-2">Formations</h3>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong>Projet Professionnel</strong>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Béziers, école Jean Jaures, du 03/2024 au 06/2024
+                </figcaption>
+              </figure>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong>1ere Année Licence de Psychologie</strong>
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Clermont-Ferrand, Université Blaise Pascal, 06/2015
+                </figcaption>
+              </figure>
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong
+                      >Niveau BTS Service Informatique aux Organisations,
+                      Spécialité Solutions Logicielles et Applications Métiers
+                      (SIO - SLAM)</strong
+                    >
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Clermont-Ferrand — Lycée Sidoine Apollinaire, du 06/2015
+                </figcaption>
+              </figure>
+
+              <figure>
+                <blockquote class="blockquote">
+                  <p>
+                    <strong
+                      >Baccalauréat Science et Technologies de la Gestion,
+                      Spécialité Gestion des Systèmes d'Information (Section
+                      Européenne)</strong
+                    >
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Clermont-Ferrand, Lycée Sidoine Apollinaire, 06/2012
+                </figcaption>
+              </figure>
             </article>
-
-        </section>
+          </section>
+        </div>
+      </div>
     </main>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
